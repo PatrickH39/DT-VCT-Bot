@@ -1,0 +1,28 @@
+{
+  "name": "patrickh/discord-modal-surveys",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/message/button/interaction.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "verify_modal"
+      }
+    },
+    "functions/events/discord/message/create.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/modal/submit/submit.js": {
+      "name": "discord.modal.submit.interaction",
+      "subtype": {
+        "custom_id": "verify_modal"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "VerifiedRole",
+      "description": "DT VCT verified"
+    }
+  ]
+}

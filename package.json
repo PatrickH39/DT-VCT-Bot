@@ -1,0 +1,8 @@
+{
+  "name": "new-project",
+  "author": "patrickh",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest"
+  }
+}
